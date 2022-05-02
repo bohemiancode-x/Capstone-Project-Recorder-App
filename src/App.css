@@ -1,0 +1,793 @@
+/* Nav styles */
+
+.navbar {
+ display: flex;
+ margin: auto;
+ padding: auto;
+ height: 7.5vh;
+ width: 70%;
+ flex-direction: row;
+ padding: 0px 5%;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.navbar h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  opacity: 100%;
+}
+
+.navbar span {
+  font-size: 60px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-weight: bold; */
+}
+
+.navbar span img {
+  height: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  font-size: 20px;
+}
+
+.navbar ul li:hover {
+  color: tomato;
+  transform: scale(1.1);
+}
+
+/* Nav overlay for mobile view */
+.over-lay {
+  display: none;
+}
+.open-btn {
+  display: none;
+}
+
+
+
+/* Homepage styles */
+
+.home {
+  /* border: 2px solid red; */
+  height: 100vh;
+}
+
+.herosection {
+  height: 95vh;
+}
+
+.herosection .header {
+  height: 60vh;
+  padding: 10px 5%;
+  /* border: 0.5px solid black; */
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.herosection .header h1 {
+  font-size: 150px;
+  margin: -100px;
+  padding: 0;
+  letter-spacing: -0.06em;
+}
+
+.herosection .header h1:first-child {
+  color: transparent;
+  background-image: linear-gradient(to left, #FF0080, #000);
+  background-clip: text;
+}
+
+.herosection .header h1:nth-child(2) {
+  color: #000;
+}
+
+.herosection .header h1:last-child {
+  color: #000;
+}
+
+#cta {
+  display: flex;
+  margin: auto;
+  padding: auto;
+  height: 7.5vh;
+  min-height: 7.5vh;
+  width: 15vw;
+  /* min-width: 15vw; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 55px;
+  font-size: 28px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  border: 2px solid #000;
+  color: #000;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#cta:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.herosection p {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  opacity: 70%;
+  letter-spacing: 1.3px;
+  word-spacing: 10px;
+  line-height: 35px;
+}
+
+.recorderpage {
+  height: 100vh;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+
+
+.recorderpage .record-main {
+  height: 100vh;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+}
+
+.recorderpage .record-main video {
+  width: 1000px;
+  /* min-width: 500px; */
+}
+
+.recorderpage .record-main .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 50px;
+  /* border: 2px solid red; */
+}
+
+.recorderpage .record-main .buttons button {
+  display: flex;
+  margin: auto;
+  padding: auto;
+  height: 7.5vh;
+  width: 8vw;
+  /* min-width: 8vw; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 55px;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  border: 2px solid #000;
+  color: #000;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.record-main .buttons .start-record:hover {
+  background-color: #fff;
+  color: red;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.record-main .buttons .stop-record:hover {
+  background-color: #fff;
+  color: mediumseagreen;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.record-main .buttons .pauserecord:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.record-main .buttons .resumerecord:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.record-main .buttons .resetrecord:hover {
+  color: rgb(112, 212, 245);
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.record-main .buttons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons img {
+  height: 40px;
+}
+
+.status {
+  height: 7.5vh;
+  width: 20vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: -2%;
+  /* border: 1px solid red; */
+}
+
+.status button {
+  border-radius: 15px;
+}
+
+.howitworks {
+  height: 50vh;
+  /* min-height: 70vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid red; */
+}
+
+.howitworks h2 {
+  margin-top: -20px;
+  font-size: 35px;
+  background-image: linear-gradient(to right, tomato, black);
+  background-clip: text;
+  color: transparent;
+}
+
+.howitworks .card-container {
+  display: flex;
+  padding: 0px 30px;
+  gap: 30px;
+}
+
+.howitworks .card-container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 35vh; */
+  /* min-height: 40vh; */
+  width: 17vw;
+  /* min-width: 17vw; */
+  border-radius: 30px;
+  padding: 25px;
+  gap: 10px;
+  background-color: #ddd;
+  box-shadow: 0 0  0 2px rgb(255,255,255),
+  0.3em 0.3em 1em rgba(0,0,0,0.3);;
+  cursor: pointer;
+}
+
+.card-container .card:hover {
+  transform: translateY(-30px);
+  transition: 0.5s;
+}
+
+.card-container .card img {
+  width: 100px;
+  opacity: 60%;
+}
+
+.card h3 {
+  font-size: 25px;
+  opacity: 70%;
+}
+
+.card p {
+  font-style: italic;
+  text-align: center;
+}
+
+.testimonial-section {
+  /* border: 1px solid black; */
+  height: 50vh;
+  /* min-height: 50vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.testimonial-section span {
+  display: block;
+  width: 70%;
+  border-top: 2px solid #000;
+}
+
+.testimonial-section h4 {
+  font-style: italic;
+  background-image: linear-gradient(to right, tomato, black);
+  background-clip: text;
+  color: transparent;
+}
+
+.testimonial-section h2 {
+  margin: -10px;
+  color: #777;
+}
+
+.testimonial-section .testimonial-cards {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  gap: 10px;
+}
+
+.testimonial-cards p {
+  width: 100%;
+  text-align: center;
+  margin: -10px;
+}
+
+.testimonial-cards img {
+  border-radius: 50%;
+  width: 75px;
+  margin: -20px;
+}
+
+.testimonial-cards .card {
+  width: 300px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* Making project responsive on smaller screens */
+
+@media screen and (max-width: 599px) and (min-width: 300px) {
+  
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+  .navbar {
+    display: flex;
+    margin: 0;
+  }
+
+  .navbar h1 {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar span img {
+    height: 15px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .over-lay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.99);
+  }
+
+  .over-lay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .over-lay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .over-lay a:hover, .over-lay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 75%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .open-btn {
+    cursor: pointer;
+    display: block;
+    margin-left: 50px;
+    background-color: transparent;
+    color: black;
+    font-size: 30px;
+  }
+
+
+  .herosection {
+    height: 95vh;
+  }
+
+  .herosection .header {
+    height: 50vh;
+  }
+
+  .herosection .header h1 {
+    font-size: 100px;
+    margin: -100px;
+  }
+
+  #cta {
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+  }
+
+  .herosection p {
+    font-size: 15px;
+    margin: 30px;
+    line-height: 25px;
+    letter-spacing: 1.15px;
+    word-spacing: 7px;
+  }
+
+  .recorderpage .record-main video {
+    width: 350px;
+  }
+
+  .recorderpage .record-main .buttons {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100vw;
+  }
+
+  .recorderpage .record-main .buttons button {
+    width: 75px;
+    height: 50px;
+    font-size: 12px;
+    
+  }
+
+  .buttons img {
+    height: 30px;
+  }
+  
+  .record-main .status {
+    display: flex;
+    gap: 10px;
+    width: 500px;
+  }
+
+
+  .record-main .status button {
+    height: 50px;
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .howitworks {
+    height: 80vh;
+    margin: 20px;
+  }
+
+  .howitworks .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .howitworks .card-container .card {
+    height: 150px;
+    width: 250px;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-container .card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  .card-container .card img {
+    width: 40px;
+    margin-top: -20px;
+  }
+
+  .card h3 {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .testimonial-section {
+    height: 70vh;
+    padding: 0px;
+  }
+
+  .testimonial-section span {
+    margin-top:-5px;
+  }
+
+  .testimonial-section .testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .testimonial-cards .card {
+    gap: 20px;
+  }
+
+  .testimonial-section img {
+    width: 50px;
+  }
+  
+  .testimonial-cards p {
+    margin: -30px;
+  }
+
+  .footer ul {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar h1 {
+    font-size: 22px;
+  }
+
+  .navbar h1 span img {
+    height: 15px;
+  }
+
+  .navbar ul {
+    margin-right: 60px;
+    width: 300px;
+    display: flex;
+    gap: 15px;
+  }
+
+  .navbar ul li {
+    font-size: 14px;
+  }
+
+  .over-lay {
+    display: none;
+  }
+  .open-btn {
+    display: none;
+  }
+
+  .herosection {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+  }
+  
+  .herosection .header {
+    height: 50vh;
+  }
+  .herosection .header h1 {
+    font-size: 120px;
+  }
+
+  #cta {
+    width: 180px;
+    font-size: 22px;
+    
+  }
+
+  .herosection p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 50px;
+  }
+
+  .recorderpage .record-main video {
+    width: 500px;
+  }
+
+  .recorderpage .record-main .buttons {
+    width: 80vw;
+    gap: 5px;
+  }
+
+  .recorderpage .record-main .buttons button {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .buttons img {
+    height: 30px;
+  }
+
+  .record-main .status {
+    width: 500px;
+    gap: 10px;
+  }
+
+  .record-main .status button {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .howitworks {
+    height: 75vh;
+  }
+
+  .howitworks h2 {
+    font-size: 24px;
+  }
+
+  .howitworks .card-container .card img {
+    width: 40px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .testimonial-section {
+    height: 50vh;
+  }
+
+  .testimonial-section span {
+    margin-top: -20px;
+  }
+
+  .testimonial-section .testimonial-cards {
+    gap: 50px;
+    height: 400px;
+    width: 500px;
+  }
+
+  .testimonial-cards .card {
+    width: 200px;
+    gap: 10px;
+  }
+
+  .testimonial-section img {
+    width: 60px;
+  }
+
+  .testimonial-cards .card h3 {
+    font-size: 18px;
+  }
+
+  .footer ul {
+    font-size: 14px;
+  }
+}
+
+

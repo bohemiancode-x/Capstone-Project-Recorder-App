@@ -257,7 +257,7 @@
 }
 
 .howitworks {
-  height: 50vh;
+  height: 70vh;
   /* min-height: 70vh; */
   display: flex;
   flex-direction: column;
@@ -651,7 +651,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px) {
+@media screen and (max-width: 950px) and (min-width: 600px) {
   .navbar {
     width: 100%;
   }
